@@ -18,5 +18,24 @@
     <s:textfield name="userName" label="Your name"/>
     <s:submit value="Submit"/>
 </s:form>
+<s:url action="hello" var="helloLink">
+    <s:param name="userName">金子的测试</s:param>
+</s:url>
+<p><a href="${helloLink}">你好, 金子</a></p>
+<s:url action="registerWithInput" var="registerWithInputLink" />
+<p><a href="${registerWithInputLink}">Please register</a> for our prize drawing.(Register with input)</p>
+<s:url action="registerWithInput" var="registerWithInputLinkIn_zh_CN">
+    <s:param name="request_locale">zh_CN</s:param>
+</s:url>
+<p><a href="${registerWithInputLinkIn_zh_CN}">请注册</a> for our prize drawing.(Register with input)</p>
+<s:url action="registerWithInput" var="registerWithInputLinkIn_zh_TW">
+    <s:param name="request_locale">zh_TW</s:param>
+</s:url>
+<p><a href="${registerWithInputLinkIn_zh_TW}">請註冊</a> for our prize drawing.(Register with input)</p>
+<s:url action="edit" var="edit"/>
+<p><a href="${edit}">edit</a></p>
+<hr/>
+<s:url action="query" var="query"/>
+<p><a href="${query}">A query test.</a></p>
 </body>
 </html>

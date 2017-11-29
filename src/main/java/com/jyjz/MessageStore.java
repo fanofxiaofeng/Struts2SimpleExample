@@ -13,6 +13,10 @@ public class MessageStore {
 
     @Override
     public String toString() {
-        return String.format("[%s]", message);
+        return "MessageStore 类的 toString() 的返回值";
+    }
+
+    public MessageStore() {
+        System.out.println("MessageStore 的构造函数被调用");
     }
 }
