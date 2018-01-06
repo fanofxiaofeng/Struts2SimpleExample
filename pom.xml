@@ -16,6 +16,8 @@
 
     <modules>
         <module>basic-struts</module>
+        <module>hello-world</module>
+        <module>using-tags</module>
         <module>geography-exam</module>
         <module>simple-interceptor</module>
         <module>with-spring</module>
