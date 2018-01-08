@@ -4,10 +4,11 @@ public class MessageStore {
     private String message;
 
     public MessageStore() {
-        message = "Hello Struts User";
+        message = "可爱的 Struts 用户, 你好";
     }
 
     public String getMessage() {
+        System.out.println("getMessage 被调用");
         return message;
     }
 }

@@ -6,6 +6,11 @@ import com.opensymphony.xwork2.ActionSupport;
 public class HelloWorldAction extends ActionSupport {
     private MessageStore messageStore;
 
+    public HelloWorldAction() {
+        super();
+        System.out.println("HelloWorldAction 类的构造函数执行一次");
+    }
+
     @Override
     public String execute() {
         messageStore = new MessageStore();
@@ -15,6 +20,7 @@ public class HelloWorldAction extends ActionSupport {
     }
 
     public MessageStore getMessageStore() {
+        System.out.println("getMessageStore 被调用");
         return messageStore;
     }
 }

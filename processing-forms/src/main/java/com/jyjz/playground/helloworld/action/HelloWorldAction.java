@@ -1,6 +1,6 @@
-package com.jyjz.playground.action;
+package com.jyjz.playground.helloworld.action;
 
-import com.jyjz.playground.model.MessageStore;
+import com.jyjz.playground.helloworld.model.MessageStore;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloWorldAction extends ActionSupport {
@@ -38,7 +38,6 @@ public class HelloWorldAction extends ActionSupport {
     }
 
     public void setUserName(String userName) {
-        System.out.println("setUserName 方法被调用, with parameter userName: " + userName);
         this.userName = userName;
     }
 }
