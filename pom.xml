@@ -19,6 +19,8 @@
         <module>hello-world</module>
         <module>using-tags</module>
         <module>processing-forms</module>
+        <module>message-resource</module>
+        <module>exception-handling</module>
         <module>geography-exam</module>
         <module>simple-interceptor</module>
         <module>with-spring</module>

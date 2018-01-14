@@ -37,3 +37,5 @@
 1. [basic-struts](./basic-struts) 对应上述的例子 `1`
 2. [hello-world](./hello-world) 对应上述的例子 `2`
 3. [using-tags](./using-tags) 对应上述的例子 `3` 和 `4`
+4. [processing-forms](./processing-forms) 对应上述的例子 `5` 和 `6`
+5. [message-resource](./message-resource) 对应上述的例子 `7`

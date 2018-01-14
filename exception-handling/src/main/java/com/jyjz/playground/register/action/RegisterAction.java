@@ -1,6 +1,7 @@
 package com.jyjz.playground.register.action;
 
 import com.google.gson.Gson;
+import com.jyjz.playground.register.exception.BadLuckException;
 import com.jyjz.playground.register.model.Person;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -13,17 +14,17 @@ public class RegisterAction extends ActionSupport {
 
     @Override
     public void validate() {
-        if (personBean.getFirstName().length() == 0) {
-            addFieldError("personBean.firstName", "First name 必须填写");
-        }
+        System.out.println("validate 函数被调用");
+    }
 
-        if (personBean.getEmail().length() == 0) {
-            addFieldError("personBean.email", "email 必须填写");
-        }
+    public void triggerBadLuckException() throws BadLuckException {
+        System.out.println("triggerBadLuckException 被执行喽");
+        throw new BadLuckException();
+    }
 
-        if (personBean.getAge() < 18) {
-            addFieldError("personBean.age", "年龄至少要达到18岁");
-        }
+    public void triggerArrayIndexOutOfBoundsException() throws ArrayIndexOutOfBoundsException {
+        System.out.println("triggerArrayIndexOutOfBoundsException 被执行喽");
+        throw new ArrayIndexOutOfBoundsException();
     }
 
     public Person getPersonBean() {

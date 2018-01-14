@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="标签库" uri="/struts-tags" %>
+<%@ taglib prefix="h" uri="/WEB-INF/hello.tld" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -21,5 +22,6 @@
     <标签库:textfield name="userName" label="Your name"/>
     <标签库:submit value="Submit"/>
 </标签库:form>
+<h:Hello/>
 </body>
 </html>

@@ -34,6 +34,7 @@ public class HelloWorldAction extends ActionSupport {
     }
 
     public String getUserName() {
+        System.out.println("getUserName 方法被调用, with parameter userName: " + userName);
         return userName;
     }
 
