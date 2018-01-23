@@ -1,0 +1,4 @@
+table.show, table.show td, table.show th {
+    border: solid 5px lightblue;
+    border-collapse: collapse;
+}

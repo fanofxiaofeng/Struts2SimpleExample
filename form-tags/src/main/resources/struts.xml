@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.custom.i18n.resources" value="global"/>
+
+    <package name="名称是什么似乎并不重要" extends="struts-default">
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+
+        <action name="save" class="com.jyjz.playground.edit.action.UpdateAction">
+            <result name="success">/thankyou.jsp</result>
+            <result name="input">/update.jsp</result>
+        </action>
+
+        <action name="edit" class="com.jyjz.playground.edit.action.UpdateAction" method="input">
+            <result name="input">/update.jsp</result>
+        </action>
+    </package>
+
+</struts>

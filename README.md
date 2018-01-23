@@ -39,3 +39,4 @@
 3. [using-tags](./using-tags) 对应上述的例子 `3` 和 `4`
 4. [processing-forms](./processing-forms) 对应上述的例子 `5` 和 `6`
 5. [message-resource](./message-resource) 对应上述的例子 `7`
+6. [form-tags](./form-tags) 对应上述的例子 `10`, `11`, `12`

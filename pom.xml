@@ -21,6 +21,8 @@
         <module>processing-forms</module>
         <module>message-resource</module>
         <module>exception-handling</module>
+        <module>form-tags</module>
+        <module>wildcard-method-selection</module>
         <module>geography-exam</module>
         <module>simple-interceptor</module>
         <module>with-spring</module>
