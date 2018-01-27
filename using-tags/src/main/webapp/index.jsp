@@ -22,6 +22,8 @@
     <标签库:textfield name="userName" label="Your name"/>
     <标签库:submit value="Submit"/>
 </标签库:form>
+
+<%-- 下面的部分可以略过 --%>
 <h:Hello/>
 </body>
 </html>

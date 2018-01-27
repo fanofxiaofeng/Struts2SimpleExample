@@ -11,10 +11,6 @@
             <result>/index.jsp</result>
         </action>
 
-        <action name="hello" class="com.jyjz.playground.helloworld.action.HelloWorldAction" method="execute">
-            <result name="success">/HelloWorld.jsp</result>
-        </action>
-
         <action name="register" class="com.jyjz.playground.register.action.RegisterAction">
             <result name="success">/thankyou.jsp</result>
             <result name="input">/register.jsp</result>

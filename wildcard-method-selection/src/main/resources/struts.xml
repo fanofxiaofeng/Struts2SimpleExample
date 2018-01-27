@@ -44,6 +44,12 @@
         <action name="create">
             <result>/create.jsp</result>
         </action>
+
+        <action name="dog" class="com.jyjz.playground.wildcardmethod.action.Dog" method="execute">
+            <result name="success" type="freemarker">
+                <param name="location">/dog.ftl</param>
+            </result>
+        </action>
     </package>
 
 </struts>

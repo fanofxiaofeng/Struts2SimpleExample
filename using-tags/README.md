@@ -1,5 +1,7 @@
-切换到本模块顶层目录下, 执行 `mvn clean jetty:run`,
-之后通过浏览器访问 [http://localhost:8080/using-tags/index.action](http://localhost:8080/using-tags/index.action)
+1. 切换到本模块顶层目录下
+2. 执行 `mvn clean jetty:run`,
+3. 之后通过浏览器访问 [http://localhost:8080/using-tags/index.action](http://localhost:8080/using-tags/index.action)
+
 由于 `src/main/webapp/WEB-INF/web.xml` 中已经配置了由名为 `struts2` 的过滤器来处理所有的 url pattern,
 所以访问 `http://localhost:8080/using-tags/index.action` 时, `struts2` 过滤器会拦截.
 在 `src/main/resources/struts.xml` 中可以找到与 `index.action` 对应的配置.
@@ -11,5 +13,5 @@ execute 函数返回 SUCCESS(即 "success"), `struts.xml` 中的配置表明此�
 之后 `MessageStore` 的 `getMessage` 方法再被调用.
 
 本模块涉及 `url` tag, `form` tag, 以及 `property` tag.
-`url` tag 与 `form` tag 的使用示例请参见 [index.jsp](src/main/webapp/index.jsp)
-`property` tag 的使用示例请参见 [HelloWorld.jsp](src/main/webapp/HelloWorld.jsp)
+`url` tag 与 `form` tag 的使用示例请参见 [index.jsp](src/main/webapp/index.jsp),
+`property` tag 的使用示例请参见 [HelloWorld.jsp](src/main/webapp/HelloWorld.jsp).

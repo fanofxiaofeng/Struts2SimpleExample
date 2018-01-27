@@ -1,13 +1,4 @@
 # Struts2SimpleExample
-参考以下三个小项目而写的简单的Struts2的例子   
-[How To Create A Struts 2 Web Application](http://struts.apache.org/getting-started/how-to-create-a-struts2-web-application.html)   
-[Hello World Using Struts 2](http://struts.apache.org/getting-started/hello-world-using-struts2.html)   
-[Using Tags](http://struts.apache.org/getting-started/using-tags.html)
-
-上述三个小项目的代码可以在 github 上看到(是 apache 的项目)   
-[apache/struts-examples](https://github.com/apache/struts-examples/graphs/contributors)
-
-
 [Getting Started](http://struts.apache.org/getting-started/index.html) 中有很多 Struts 2 的例子.
 这些例子对我帮助很大, 我在本项目中对它们进行了简答的总结(其实上述链接中已经有很多相关的文档了, 但是我觉得亲自写一下总结对自己会更有帮助).
 先列举一下各个例子的链接
@@ -34,9 +25,9 @@
 21. [Exclude Parameters](http://struts.apache.org/getting-started/exclude-parameters.html)
 
 各个例子的总结请参见以下子目录
-1. [basic-struts](./basic-struts) 对应上述的例子 `1`
-2. [hello-world](./hello-world) 对应上述的例子 `2`
-3. [using-tags](./using-tags) 对应上述的例子 `3` 和 `4`
-4. [processing-forms](./processing-forms) 对应上述的例子 `5` 和 `6`
+1. [basic-struts](./basic-struts) 对应上述的例子 `1` (已完成)
+2. [hello-world](./hello-world) 对应上述的例子 `2` (已完成)
+3. [using-tags](./using-tags) 对应上述的例子 `3` 和 `4` (已完成)
+4. [processing-forms](./processing-forms) 对应上述的例子 `5` 和 `6` (已完成)
 5. [message-resource](./message-resource) 对应上述的例子 `7`
 6. [form-tags](./form-tags) 对应上述的例子 `10`, `11`, `12`

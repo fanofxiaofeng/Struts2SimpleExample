@@ -17,13 +17,5 @@
     <s:textfield name="personBean.age" label="Age"/>
     <s:submit/>
 </s:form>
-<hr/>
-<s:url action="register" var="registerLink">
-    <s:param name="personBean.firstName">fn</s:param>
-    <s:param name="personBean.lastName">ln</s:param>
-    <s:param name="personBean.email">e@m</s:param>
-    <s:param name="personBean.age">939</s:param>
-</s:url>
-<p><a href="${registerLink}">注册链接</a> </p>
 </body>
 </html>

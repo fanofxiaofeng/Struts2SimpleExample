@@ -10,5 +10,7 @@
 <h1>欢迎来到 Struts 2 的世界!</h1>
 <s:url action="view" var="viewLink"/>
 <p><a href="${viewLink}">检视</a></p>
+<s:url action="dog" var="dogLink"/>
+<p><a href="${dogLink}">dog</a></p>
 </body>
 </html>

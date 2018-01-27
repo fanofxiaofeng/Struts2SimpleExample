@@ -13,14 +13,17 @@ public class RegisterAction extends ActionSupport {
 
     @Override
     public void validate() {
+        // User must provide a first name
         if (personBean.getFirstName().length() == 0) {
             addFieldError("personBean.firstName", "First name 必须填写");
         }
 
+        // User must provide an email address
         if (personBean.getEmail().length() == 0) {
             addFieldError("personBean.email", "email 必须填写");
         }
 
+        // User younger than 18 cannot register
         if (personBean.getAge() < 18) {
             addFieldError("personBean.age", "年龄至少要达到18岁");
         }

@@ -12,16 +12,12 @@ public class HelloWorldAction extends ActionSupport {
 
     public HelloWorldAction() {
         super();
-        System.out.println("HelloWorldAction 的构造函数被调用一次");
+        count++;
     }
 
     @Override
     public String execute() {
         messageStore = new MessageStore();
-        System.out.println("execute() in HelloWorldAction 执行一次");
-        System.out.println(count);
-        count++;
-        System.out.println(count);
         return SUCCESS;
     }
 

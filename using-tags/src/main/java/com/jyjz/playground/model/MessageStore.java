@@ -1,5 +1,7 @@
 package com.jyjz.playground.model;
 
+import com.google.gson.Gson;
+
 public class MessageStore {
     private String message;
 
@@ -13,6 +15,6 @@ public class MessageStore {
 
     @Override
     public String toString() {
-        return "MessageStore 被转化为 String";
+        return new Gson().toJson(this);
     }
 }

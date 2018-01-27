@@ -10,6 +10,6 @@ public class HelloTag extends SimpleTagSupport {
     public void doTag() throws JspException, IOException {
         JspWriter out = getJspContext().getOut();
         out.println("\ud83d\ude02");
-        out.println("在 doTag() 函数里写几个汉字试试看");
+        out.println("我在 doTag() 函数里写几个汉字试试效果");
     }
 }
