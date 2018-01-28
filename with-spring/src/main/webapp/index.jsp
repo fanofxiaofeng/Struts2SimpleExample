@@ -19,5 +19,9 @@
 </s:url>
 <p><a href="${helloLink}">试试效果</a></p>
 <p>试试用自己的名字产生一个表单</p>
+<s:form action="dog">
+    <s:textfield name="abc"/>
+    <s:submit/>
+</s:form>
 </body>
 </html>

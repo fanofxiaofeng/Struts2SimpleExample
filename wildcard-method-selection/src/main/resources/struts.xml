@@ -10,12 +10,12 @@
             <result>/index.jsp</result>
         </action>
 
-        <!--&lt;!&ndash;<action name="*Person" class="com.jyjz.playground.wildcardmethod.action.PersonAction" method="{1}">&ndash;&gt;-->
-        <!--&lt;!&ndash;<result name="input">/update.jsp</result>&ndash;&gt;-->
-        <!--&lt;!&ndash;<result name="edit">/edit.jsp</result>&ndash;&gt;-->
-        <!--&lt;!&ndash;<result name="success">/view.jsp</result>&ndash;&gt;-->
-        <!--&lt;!&ndash;<allowed-methods>delete</allowed-methods>&ndash;&gt;-->
-        <!--</action>-->
+        <action name="*Person" class="com.jyjz.playground.wildcardmethod.action.PersonAction" method="{1}">
+            <result name="input">/update.jsp</result>
+            <result name="edit">/edit.jsp</result>
+            <result name="success">/view.jsp</result>
+            <allowed-methods>delete</allowed-methods>
+        </action>
 
         <action name="editPerson" class="com.jyjz.playground.wildcardmethod.action.PersonAction" method="edit">
             <result name="edit">/edit.jsp</result>

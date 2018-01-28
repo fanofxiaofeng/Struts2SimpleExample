@@ -23,6 +23,11 @@
         <module>exception-handling</module>
         <module>form-tags</module>
         <module>wildcard-method-selection</module>
+        <module>naive-calculator</module>
+        <module>naive-servlet</module>
+        <module>naive-jsp</module>
+        <module>naive-interceptor</module>
+        <module>naive-listener</module>
         <module>geography-exam</module>
         <module>simple-interceptor</module>
         <module>with-spring</module>
@@ -64,6 +69,11 @@
                         <source>1.7</source>
                         <target>1.7</target>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.2.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>

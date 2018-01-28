@@ -1,0 +1,14 @@
+/*
+code 的样式来自
+http://struts.apache.org/getting-started/how-to-create-a-struts2-web-application.html
+ 中的 highlighter-rouge 类
+*/
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+

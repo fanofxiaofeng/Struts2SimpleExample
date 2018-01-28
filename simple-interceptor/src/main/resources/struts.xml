@@ -6,29 +6,37 @@
 <struts>
     <constant name="struts.devMode" value="false"/>
     <package name="packageNameIsNotImportant" extends="struts-default">
+        <interceptors>
+            <interceptor name="naiveInterceptor" class="com.jyjz.playground.interceptor.NaiveInterceptor"/>
+            <interceptor-stack name="appDefault">
+                <interceptor-ref name="timer"/>
+                <interceptor-ref name="logger"/>
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="naiveInterceptor"/>
+            </interceptor-stack>
+        </interceptors>
 
-        <global-results>
-            <result name="securityError">/securityError.jsp</result>
-            <result name="error">/error.jsp</result>
-        </global-results>
-
-        <global-exception-mappings>
-            <exception-mapping exception="org.apache.struts.register.exceptions.SecurityBreachException"
-                               result="securityError"/>
-            <exception-mapping exception="java.lang.Exception" result="error"/>
-        </global-exception-mappings>
+        <default-interceptor-ref name="appDefault"/>
 
         <action name="index">
             <result>/index.jsp</result>
         </action>
+
         <action name="hello" class="com.jyjz.playground.action.HelloWorldAction" method="execute">
-            <interceptor-ref name="timer"/>
-            <interceptor-ref name="logger"/>
-            <interceptor-ref name="defaultStack">
-                <param name="exception.logEnabled">true</param>
-                <param name="exception.logLevel">ERROR</param>
-            </interceptor-ref>
             <result name="success">/HelloWorld.jsp</result>
+        </action>
+
+        <action name="try">
+            <result name="success" type="redirect">
+                <param name="location">
+                    /pic/weather.png
+                </param>
+            </result>
+        </action>
+
+        <action name="upload" class="com.jyjz.playground.action.HelloWorldAction" method="upload">
+            <result name="success">/success.jsp</result>
+            <result name="error">/failure.jsp</result>
         </action>
 
     </package>

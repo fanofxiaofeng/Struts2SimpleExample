@@ -13,4 +13,4 @@ execute 函数返回 SUCCESS(即 "success"), `struts.xml` 中的配置表明此�
 `HelloWorld.jsp` 中有 `<s:property value="messageStore.message" />`, 这会导致 `HelloWorldAction` 中的 `getMessageStore` 方法被调用,
 之后 `MessageStore` 的 `getMessage` 方法再被调用.
 
-反复访问 [http://localhost:8080/hello-world/index.action](http://localhost:8080/hello-world/index.action) 会看到 HelloWorldAction 类的构造函数也会被多次调用
+反复访问 [http://localhost:8080/hello-world/hello.action](http://localhost:8080/hello-world/hello.action) 会看到 HelloWorldAction 类的构造函数也会被多次调用

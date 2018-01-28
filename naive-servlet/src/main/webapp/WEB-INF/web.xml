@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>Basic Struts2</display-name>
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+
+    <context-param>
+        <param-name>fakeUserName</param-name>
+        <param-value>George</param-value>
+    </context-param>
+    <context-param>
+        <param-name>fakePassword</param-name>
+        <param-value>disposeAllGarbage</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>myServlet</servlet-name>
+        <servlet-class>com.jyjz.playground.SimpleServlet</servlet-class>
+        <!-- 可以为 myServlet 配置一些参数 -->
+        <init-param>
+            <param-name>key1</param-name>
+            <param-value>测试一下😂</param-value>
+        </init-param>
+        <init-param>
+            <param-name>key2</param-name>
+            <param-value>Simple Text</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>pictureServlet</servlet-name>
+        <servlet-class>com.jyjz.playground.SimplePictureServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>showRequestHeader</servlet-name>
+        <servlet-class>com.jyjz.playground.ShowRequestHeaderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>showRequestHeader</servlet-name>
+        <url-pattern>/showRequestHeader</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>pictureServlet</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>myServlet</servlet-name>
+        <!-- 下面这个是缺省 servlet -->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>naive-filter</filter-name>
+        <filter-class>com.jyjz.playground.filter.NaiveFilter</filter-class>
+        <init-param>
+            <param-name>key1</param-name>
+            <param-value>doggy</param-value>
+        </init-param>
+        <init-param>
+            <param-name>key2</param-name>
+            <param-value>piggy</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>naive-filter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>showCookiesFilter</filter-name>
+        <filter-class>com.jyjz.playground.filter.ShowCookiesFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>showCookiesFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>parameter-filter</filter-name>
+        <filter-class>com.jyjz.playground.filter.ParameterFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>parameter-filter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>inner-filter</filter-name>
+        <filter-class>com.jyjz.playground.filter.InnerFilter</filter-class>
+        <init-param>
+            <description>所在國家</description>
+            <param-name>country</param-name>
+            <param-value>中華</param-value>
+        </init-param>
+        <init-param>
+            <param-name>參數用途</param-name>
+            <param-value>測試</param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <filter-name>outer-filter</filter-name>
+        <filter-class>com.jyjz.playground.filter.OuterFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>outer-filter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>inner-filter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+
+</web-app>

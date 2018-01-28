@@ -1,0 +1,32 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<h1>request</h1>
+<p>request.getClass(): <code><%= request.getClass() %> </code></p>
+<p>request == pageContext.getRequest()?: <code><%= request == pageContext.getRequest() %> </code></p>
+<hr/>
+<h1>response</h1>
+<p>response.getClass(): <code><%= response.getClass() %> </code></p>
+<p>response == pageContext.getResponse()?: <code><%= response == pageContext.getResponse() %> </code></p>
+<hr/>
+<h1>out</h1>
+<p>out.getClass(): <code><%= out.getClass() %> </code></p>
+<p>out == pageContext.getOut()?: <code><%= out == pageContext.getOut() %> </code></p>
+<hr/>
+<h1>session</h1>
+<p>session.getClass(): <code><%= session.getClass() %> </code></p>
+<p>session == pageContext.getSession()?: <code><%= session == pageContext.getSession() %> </code></p>
+<hr/>
+<h1>application</h1>
+<p>application.getClass(): <code><%= application.getClass() %> </code></p>
+<p>application == pageContext.getServletContext()?: <code><%= application == pageContext.getServletContext() %> </code></p>
+<hr/>
+<h1>config</h1>
+<p>config.getClass(): <code><%= config.getClass() %> </code></p>
+<p>config == pageContext.getServletConfig()?: <code><%= config == pageContext.getServletConfig() %> </code></p>
+<hr/>
+<h1>pageContext</h1>
+<p>pageContext.getClass(): <code><%= pageContext.getClass() %> </code></p>
+<hr/>
+<h1>page</h1>
+<p>page.getClass(): <code><%= page.getClass() %> </code></p>
+<p>page == pageContext.getPage()?: <code><%= page == pageContext.getPage() %> </code></p>
+<hr/>
